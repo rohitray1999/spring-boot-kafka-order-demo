@@ -39,6 +39,7 @@ public class OrderController {
 
     @GetMapping("/health")
     public Map<String, String> health() {
+        //this is health checker api
         return Map.of("status", "UP", "service", "kafka-demo");
     }
 }
